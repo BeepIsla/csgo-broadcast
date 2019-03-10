@@ -1,0 +1,8 @@
+table, h1, h4, header, div {
+	width: 100%;
+	text-align: center;
+}
+
+a:link, a:visited, a:hover, a:active {
+	color: blue;
+}

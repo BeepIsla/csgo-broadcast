@@ -1,0 +1,68 @@
+<head>
+	<title>CSGO Broadcasting</title>
+
+	<link rel="stylesheet" href="../css/styles.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-duration-format/2.2.2/moment-duration-format.min.js"></script>
+	<script src="index.js"></script>
+</head>
+<body>
+	<header>
+		<a href="/">Matches</a>
+		-
+		<a href="/faq">FAQ</a>
+	</header>
+
+	<h1>Live Matches</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Match Token</th>
+				<th>Timestamp</th>
+				<th>Map</th>
+				<th>Tickrate</th>
+				<th>Last Response</th>
+				<th>Viewers</th>
+				<th>Status</th>
+			</tr>
+		</thead>
+		<tbody id="tableBodyLive">
+			<tr>
+				<td></td>
+				<td></td>
+				<td>No</td>
+				<td>matches</td>
+				<td>available</td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<br><hr>
+
+	<h1>Past Matches</h1>
+	<h4><i>Up to 14 days/336 hours</i></h4>
+	<table>
+		<thead>
+			<tr>
+				<th>Match Token</th>
+				<th>Timestamp</th>
+				<th>Map</th>
+				<th>Tickrate</th>
+				<th>Ended</th>
+				<th>Demo</th>
+			</tr>
+		</thead>
+		<tbody id="tableBodyPast">
+			<tr>
+				<td></td>
+				<td>No</td>
+				<td>matches</td>
+				<td>available</td>
+				<td></td>
+				<td>No download available</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
