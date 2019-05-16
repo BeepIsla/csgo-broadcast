@@ -125,14 +125,10 @@ document.addEventListener("DOMContentLoaded", () => {
 			td_Response.classList.add("lastResponse");
 
 			let td_Status = document.createElement("td");
-			if (typeof match.demo === "undefined") {
-				td_Status.innerText = "No download available";
-			} else {
-				let a = document.createElement("a");
-				a.href = match.demo;
-				a.innerText = "Download";
-				td_Status.appendChild(a);
-			}
+			let a = document.createElement("a");
+			a.href = "steam://rungame/730/76561202255233023/+playcast%20%22" + window.location.origin + "/match/" + match.token + "%22";
+			a.innerText = "Replay";
+			td_Status.appendChild(a);
 
 			tr.appendChild(td_Play);
 			tr.appendChild(td_Timestamp);

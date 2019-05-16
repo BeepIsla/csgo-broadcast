@@ -35,6 +35,12 @@ module.exports = (matchViewers) => {
 				return next();
 			}
 
+			// Do not do any viewer counting if its a replay
+			let stat = fs.statSync("./bin/" + token);
+			if (Date.now() - stat.mtimeMs >= (5 * 60 * 1000)) {
+				return next();
+			}
+
 			let index = matchViewers.map(m => m.token).indexOf(token);
 			if (index <= -1) {
 				return next();

@@ -28,7 +28,6 @@ server.post("/reset/:token", (req, res) => {
 server.post("/:token/:fragmentNumber/:frameType", (req, res) => {
 	if (req.params.frameType === "start") {
 		console.log("Starting broadcast with token " + req.params.token + " and fragment number " + req.params.fragmentNumber);
-		console.log(req.headers);
 
 		fs.mkdirSync("./bin/" + req.params.token);
 		fs.writeFileSync("./bin/" + req.params.token + "/config.json", JSON.stringify({
