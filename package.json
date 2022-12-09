@@ -14,6 +14,6 @@
   "author": "github.com/BeepFelix",
   "license": "AGPLv3",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.18.2"
   }
 }
